@@ -1,4 +1,4 @@
-package com.JohnZhuang.gmall.flume.utils;
+package com.atguigu.gmall.flume.utils;
 
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.JSONException;

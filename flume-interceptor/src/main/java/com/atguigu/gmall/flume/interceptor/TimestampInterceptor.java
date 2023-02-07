@@ -1,4 +1,4 @@
-package com.JohnZhuang.gmall.flume.interceptor;
+package com.atguigu.gmall.flume.interceptor;
 
 import com.alibaba.fastjson.JSONObject;
 import org.apache.flume.Context;

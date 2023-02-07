@@ -1,6 +1,6 @@
-package com.JohnZhuang.gmall.flume.interceptor;
+package com.atguigu.gmall.flume.interceptor;
 
-import com.JohnZhuang.gmall.flume.utils.JSONUtil;
+import com.atguigu.gmall.flume.utils.JSONUtil;
 import org.apache.flume.Context;
 import org.apache.flume.Event;
 import org.apache.flume.interceptor.Interceptor;
