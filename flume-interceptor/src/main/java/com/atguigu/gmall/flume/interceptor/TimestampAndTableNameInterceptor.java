@@ -28,14 +28,10 @@ public class TimestampAndTableNameInterceptor implements Interceptor {
         String log = new String(event.getBody(), StandardCharsets.UTF_8);
 
         JSONObject jsonObject = JSONObject.parseObject(log);
-
-        Long ts = jsonObject.getLong("ts");
-        //Maxwell输出的数据中的ts字段时间戳单位为秒，Flume HDFSSink要求单位为毫秒
-        String timeMills = String.valueOf(ts * 1000);
-
         String tableName = jsonObject.getString("table");
+        String ts = jsonObject.getString("ts");
 
-        headers.put("timestamp", timeMills);
+        headers.put("timestamp", ts + "000");
         headers.put("tableName", tableName);
         return event;
 
